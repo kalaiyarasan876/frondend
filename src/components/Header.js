@@ -23,6 +23,8 @@ export default function Header({cartItems}) {
           {cartItems.length}
         </span>
         </Link>
+
+
       </div>
     </nav>
   );
