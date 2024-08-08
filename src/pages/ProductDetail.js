@@ -34,7 +34,7 @@ export default function ProductDetail({ cartItems, setCartItems }) {
     if (qty > 1) {
       setQty(qty - 1);
     } else {
-      toast.error("Cannot decrease quantity below 1!");
+      return false; 
     }
   }
 
@@ -87,7 +87,7 @@ export default function ProductDetail({ cartItems, setCartItems }) {
               type="button"
               id="cart_btn"
               value={qty}
-              className="btn btn-primary d-inline ml-4"
+              className="btn btn-primary d-inline ml-4 m-2"
               onClick={addToCart}
               disabled={product.stock === 0}
             >

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HelmetProvider } from 'react-helmet-async';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -30,6 +31,7 @@ function App() {
               theme="dark"
             />
             <Header cartItems={cartItems} />
+            <HelmetProvider>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/search" element={<Home />} />
@@ -37,6 +39,7 @@ function App() {
               <Route path="/cart" element={ <Cart cartItems={cartItems} setCartItems={setCartItems}/> }/>
             </Routes>
             <Footer />
+            </HelmetProvider>
           </div>
         </Router>
       </div>
