@@ -89,7 +89,7 @@ nav {
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #69fe7d;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
@@ -352,8 +352,8 @@ footer {
 }
 
 .wrapper form .btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #00b03b;
+  border-color: #00b03b;
   color: white;
   margin-top: 2.5rem;
 }
