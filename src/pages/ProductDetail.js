@@ -89,7 +89,7 @@ export default function ProductDetail({ cartItems, setCartItems }) {
               value={qty}
               className="btn btn-primary d-inline ml-4 m-2"
               onClick={addToCart}
-              disabled={product.stock === 0}
+              disabled={product.stock == 0}
             >
               Add to Cart
             </button>
@@ -97,12 +97,12 @@ export default function ProductDetail({ cartItems, setCartItems }) {
             <hr />
 
             <p>
-              Status:{" "}
+              Status:
               <span
                 id="stock_status"
                 className={product.stock > 0 ? "text-success" : "text-danger"}
               >
-                {product.stock > 0 ? "In Stock" : "Out of Stock"}{" "}
+                {product.stock > 0 ? "In Stock" : "Out of Stock"}
               </span>
             </p>
 
